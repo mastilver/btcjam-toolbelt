@@ -44,6 +44,9 @@
                 currentlyInvested += invested * (remainingPayments / totalPayments);
             }
 
+            totalInvested = totalInvested.toFixed(8);
+            currentlyInvested = currentlyInvested.toFixed(8);
+
 
             var investementTitle = document.querySelector('#body .col-md-12 .widgetlight h3');
             investementTitle.textContent += ' - ฿' + currentlyInvested + ' currently invested';
