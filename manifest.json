@@ -1,0 +1,18 @@
+{
+  "name": "btcjam-toolbelt",
+  "version": "0.1.0",
+  "description": "",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://btcjam.com/listing_investments"],
+      "js": ["listingInvestement.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "minimum_chrome_version": "21.0"
+}
